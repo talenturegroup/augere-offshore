@@ -1,0 +1,368 @@
+.hero{
+    color: white;
+    padding: 100px;
+    position: relative;
+    padding-top: 200px;
+    background: url("../assets/backgroundtile.png");
+}
+.hero video{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    pointer-events: none;
+}
+.hero h1{
+    width: 90%;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1em;
+    color: white;
+    text-shadow: -5px 5px black;
+}
+.hero button{
+    margin-top: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .3s;
+}
+.hero button:hover{
+    color: var(--blue);
+    background: white;
+}
+
+.section-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33%);
+    justify-items: center;
+    padding-top: 20px;
+    background: white;
+}
+.section-2 > div{
+    padding: 20px 30px;
+    width: 100%;
+}
+.section-2 div h2{
+    color: var(--blue);
+    font-size: 35px;
+}
+.section-2 div h2:nth-child(2){
+    margin-bottom: 20px;
+}
+
+.section-2 .prices .figures{
+    color: gray;
+}
+.section-2 .prices .figures h3{
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+}
+.section-2 .prices .figures h3 span:nth-child(2){
+    font-size: 15px;
+    font-weight: 400;
+}
+.section-2 .about{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 18px;
+}
+.section-2 .about button{
+    margin-top: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .3s;
+}
+.section-2 .about button:hover{
+    color: var(--blue);
+    background: lightgray;
+}
+.section-2 .news{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section-2 .news a{
+    color: black;
+    transition: .3s;
+}
+.section-2 .news a:hover{
+    opacity: 0.5;
+}
+
+.loading {
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    font-size: 80px;
+    animation: rotate 1s infinite linear;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.insights-section{
+    background: #ececec;
+    padding: 30px 4%;
+}
+.insights-section h2{
+    color: #079ED9;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.insights-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.insights-section a{
+    color: black;
+}
+.insights-section button{
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .3s;
+    display: block;
+    margin: 50px auto 0;
+}
+.insights-section button:hover{
+    color: var(--blue);
+    background: lightgray;
+}
+
+/* .insights-row{
+    display: flex;
+    gap: 1em;
+    margin: 30px 0;
+} */
+/* .insights-container{
+    color: white;
+    width: 33%;
+} */
+
+/* .insight-card{
+    background: white;
+    padding: 30px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: black;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .5s;
+} */
+/* .insight-card:hover{
+    transform: scale(1.05);
+    background: var(--blue);
+} */
+/* .insight-card h3{
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+} */
+/* .insight-card p{
+    position: relative;
+    z-index: 2;
+    overflow: hidden; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; 
+    margin-top: 15px;
+} */
+/* .insight-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.5;
+} */
+/* .insight-card img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+} */
+
+
+
+
+/* .img-holder{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: black;
+    margin-top: 30px;
+}
+.img-holder h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 3;
+}
+.img-holder img{
+    object-fit: cover;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+
+.newsletter{
+    background: grey;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 8px solid var(--blue);
+}
+.newsletter h1{
+    font-size: 2em;
+}
+.newsletter form{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.newsletter form input{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    text-indent: 20px;
+    background: transparent;
+    border: 1px dashed white;
+    color: white;
+    font-size: 16px;
+}
+.newsletter form input::placeholder{
+    text-indent: 20px;
+    color: white;
+}
+.newsletter form button{
+    border: none;
+    outline: none;
+    background: white;
+    color: black;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+.newsletter form button:hover{
+    background: var(--red);
+    color: white;
+}
+
+@media (min-width: 851px) and (max-width: 1024px){
+    .hero{
+        padding: 60px;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 850px){
+    .hero{
+        margin-top: 80px;
+        padding: 20px;
+    }
+    .hero h1{
+        font-size: 40px;
+        width: 100%;
+        line-height: 1.2em;
+        text-shadow: -3px 3px black;
+    }
+    .section-2{
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+    .section-2 .about{
+        border: none;
+    }
+    .section-2 > div{
+        padding: 10px;
+    }
+    .section-2 div h2{
+        font-size: 25px;
+    }
+    .insights-section{
+        padding: 20px;
+    }
+
+    .insights-row{
+        flex-direction: column;
+    }
+    .insights-container{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .insights-row a{
+        margin-bottom: 20px;
+        /* max-width: 100%; */
+    }
+
+    .newsletter{
+        flex-direction: column;
+    }
+    .newsletter h1{
+        font-size: 1.5em;
+    }
+    .newsletter form{
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .newsletter form input{
+        width: 100%;
+    }
+    .newsletter form button{
+        width: 100%;
+    }
+}
+

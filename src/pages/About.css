@@ -1,0 +1,45 @@
+.about-title{
+    padding: 0;
+    padding-top: 150px;
+}
+.about-title h1{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+.about-banner{
+    text-align: center;
+    padding: 150px;
+    background: url("../assets/backgroundtile.png");
+}
+.about-banner img{
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -5;
+    position: absolute;
+    opacity: 0.5;
+}
+.about-banner p{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+.about-title .service p{
+    margin: 20px 0;
+}
+
+@media (max-width: 1000px){
+    .about-title{
+        padding-top: 90px;
+    }
+    .about-title h1{
+        font-size: 50px;
+    }
+    .about-banner{
+        padding: 30px;
+    }
+    .about-banner img{
+        height: 100%;
+    }
+}

@@ -1,0 +1,90 @@
+.sustain-title{
+    padding: 0;
+    padding-top: 150px;
+}
+.sustain-title h1{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+.sustain-title .intro{
+    border: 3px solid black;
+    text-align: center;
+    padding: 50px;
+    background: white;
+    position: relative;
+}
+.sustain-title .intro::before{
+    content: "";
+    width: 50%;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--blue);
+    position: absolute;
+}
+.sustain-title .intro p{
+    border: 2px solid;
+    padding: 50px;
+    font-size: 18px;
+}
+.sustain-title h2{
+    text-align: center;
+    /* color: white; */
+    background: white;
+    font-size: 2.3em;
+    padding: 30px;
+}
+.principles{
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    background: linear-gradient(to left, var(--blue) 50%, grey 50%);
+    color: white;
+    font-size: 18px;
+}
+.principles ul{
+    padding: 60px 20px;
+    border: 2px solid;
+    /* background: var(--blue); */
+    position: relative;
+    width: 50%;
+}
+.principles ul::before{
+    content: "";
+    width: 50%;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    position: absolute;
+}
+.principles ul li{
+    margin: 30px;
+    list-style: none;
+}
+
+@media (max-width: 1000px){
+    .sustain-title .intro{
+        padding: 30px;
+        border: none;
+        border-bottom: 2px solid black;
+        text-align: left;
+    }
+    .sustain-title .intro p{
+        padding: 12px;
+    }
+    .sustain-title h2{
+        font-size: 1.7em;
+    }
+    .principles{
+        flex-direction: column;
+        background: linear-gradient(to bottom, var(--blue) 50%, grey 50%);
+        padding: 0;
+    }
+    .principles ul{
+        width: 100%;
+    }
+}
