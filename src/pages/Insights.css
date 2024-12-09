@@ -56,7 +56,6 @@ iframe {
 .blog-container .text h3 {
     font-size: 20px;
     line-height: 1.4em;
-    text-transform: uppercase;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2; 

@@ -44,7 +44,7 @@ const Home = () => {
     <>
       <section className="hero">
         <video src={bgvideo} autoPlay loop muted/>
-        <h1>PIONEERING OFFSHORE AND ONSHORE DRILLING SERVICES IN WEST AFRICA</h1>
+        <h1>PIONEERING OFFSHORE AND DEEPWATER DRILLING SERVICES IN WEST AFRICA</h1>
         <a href="./about"><button>Read More</button></a>
       </section>
 
@@ -62,7 +62,7 @@ const Home = () => {
 
         <div className="about">
           <h2>About the Company</h2>
-          <p>Augere Offshore Services Limited (AOSL) stands at the forefront of the Onshore and Offshore drilling sector in West Africa, offering innovative and sustainable solutions to the oil and gas industry.</p>
+          <p>Augere Offshore Services Limited (AOSL) stands at the forefront of the Offshore and Deepwater drilling sector in West Africa, offering innovative and sustainable solutions to the oil and gas industry.</p>
           <Link to="/about"><button>Read More</button></Link>
         </div>
 

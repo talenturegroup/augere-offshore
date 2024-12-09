@@ -15,21 +15,21 @@ const About = () => {
       <div className="about-banner">
         <img src={image1} alt="" />
         <h1>About Augere Offshore</h1>
-        <p>Augere Offshore Services Limited (AOSL) stands at the forefront of offshore and onshore drilling sector in West Africa, offering innovative and sustainable solutions to the oil and gas industry.</p>
+        <p>Augere Offshore Services Limited (AOSL) stands at the forefront of offshore and deepwater drilling sector in West Africa, offering innovative and sustainable solutions to the oil and gas industry.</p>
       </div>
 
       <div className="services">
         <img src={image9} alt="" />
         <div className="service">
-          <h2>DRIVING INNOVATION AND EXCELLENCE IN OFFSHORE AND ONSHORE DRILLING</h2>
-          <p>Augere Offshore Services Limited (AOSL) stands at the forefront of the Offshore and Onshore drilling sector in Nigeria, offering innovative and sustainable solutions to the oil and gas industry.</p>
+          <h2>DRIVING INNOVATION AND EXCELLENCE IN OFFSHORE AND deepwater DRILLING</h2>
+          <p>Augere Offshore Services Limited (AOSL) stands at the forefront of the Offshore and Deepwater drilling sector in Nigeria, offering innovative and sustainable solutions to the oil and gas industry.</p>
           <p>As a next-generation company, AOSL is dedicated to responsibly delivering energy that powers the world, positioning itself as a leader in a wide spectrum of customers well program requirements</p>
         </div>
       </div>
 
       <div className="services">
         <div className="service">
-          <h2>REDEFINING ONSHORE AND OFFSHORE DRILLING</h2>
+          <h2>REDEFINING Offshore and Deepwater DRILLING</h2>
           <p>At AOSL, our core mission is to provide responsible drilling services that resonate with global demands. This commitment drives our operations and defines our identity as a new generation offshore and offshore drilling contractor. We harness cutting-edge technology and a skilled workforce to ensure our services meet the highest standards</p>
           <p>Through our joint venture partnerships, AOSL offers operators access to an extensive rig fleet, including ultra-deepwater drill ships, versatile semisubmersibles, jack up’s and swamp rigs. Our diverse capabilities enable us to cater to a wide array of well program requirements, ensuring that we meet the unique needs of each client.</p>
         </div>
