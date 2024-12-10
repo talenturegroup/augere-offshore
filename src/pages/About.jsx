@@ -31,7 +31,7 @@ const About = () => {
         <div className="service">
           <h2>REDEFINING Offshore and Deepwater DRILLING</h2>
           <p>At AOSL, our core mission is to provide responsible drilling services that resonate with global demands. This commitment drives our operations and defines our identity as a new generation offshore and offshore drilling contractor. We harness cutting-edge technology and a skilled workforce to ensure our services meet the highest standards</p>
-          <p>Through our joint venture partnerships, AOSL offers operators access to an extensive rig fleet, including ultra-deepwater drill ships, versatile semisubmersibles, jack up’s and swamp rigs. Our diverse capabilities enable us to cater to a wide array of well program requirements, ensuring that we meet the unique needs of each client.</p>
+          <p>Through our joint venture partnerships, AOSL offers operators access to an extensive rig fleet, including ultra-deepwater drill ships, versatile semisubmersibles and jack up’s rigs. Our diverse capabilities enable us to cater to a wide array of well program requirements, ensuring that we meet the unique needs of each client.</p>
         </div>
         <img src={image2} alt="" />
       </div>

@@ -22,7 +22,7 @@ const Home = () => {
   useEffect(()=>{
     fetch(newsurl)
     .then(response => response.json())
-    .then(data => setNews(data.response.results.slice(0,3)))
+    .then(data => setNews(data.response.results))
     .catch(err => console.log(err))
   }, []);
 
@@ -68,13 +68,15 @@ const Home = () => {
 
         <div className="news">
           <h2>Latest News</h2>
-          {news.map((article, index) => 
-          (
-            <a href={article.webUrl} target='_blank' rel="noreferrer" key={index}>
-              <p>{new Date(article.webPublicationDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-              <b>{article.webTitle}</b>
-            </a>
-          ))}
+          <div>
+            {news.map((article, index) => 
+            (
+              <a href={article.webUrl} target='_blank' rel="noreferrer" key={index}>
+                <p>{new Date(article.webPublicationDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                <b>{article.webTitle}</b>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
