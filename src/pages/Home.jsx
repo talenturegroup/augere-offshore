@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Home.css'
 import bgvideo from '../assets/video.mp4'
-import vid1 from '../assets/blog-vid1.mp4'
-import vid2 from '../assets/blog-vid2.mp4'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
 import { Link } from 'react-router-dom'
@@ -96,7 +94,7 @@ const Home = () => {
                 </Link>
                 <div className="blog-container">
                     <video controls>
-                      <source src={vid2} type='video/webm'/>
+                      <source src='/blog-vid3.mp4' type='video/webm'/>
                     </video>
                     <div className="text">
                       <h3>Nigeria’s Deepwater Oil Legacy: A Journey Through Time</h3>
@@ -104,7 +102,7 @@ const Home = () => {
                 </div>
                 <div className="blog-container">
                     <video controls>
-                      <source src={vid1} type='video/webm'/>
+                      <source src='blog-vid1.mp4' type='video/webm'/>
                     </video>
                     <div className="text">
                       <h3>10 Biggest Semi-Submersible Rigs</h3>
