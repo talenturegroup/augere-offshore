@@ -16,7 +16,7 @@ const Service = () => {
         <img src={image10} alt="" />
         <div className="service">
           <h2>Unlocking Value in Oil and Gas Exploration and Production</h2>
-          <p>E&P must work efficiently as they make significant investment commitments for their deepwater projects. At Augere Offshore Services, we recognize that operational efficiency is paramount. Our solutions are designed to not only save our clients money but also enhance the overall economics of their ventures. By prioritizing efficiency and safety, we ensure that our clients can maximize their investments and achieve successful outcomes.</p>
+          <p>E&P must work efficiently as they make significant investment commitments for their offshore and deepwater projects. At Augere Offshore Services, we recognize that operational efficiency is paramount. Our solutions are designed to not only save our clients money but also enhance the overall economics of their ventures. By prioritizing efficiency and safety, we ensure that our clients can maximize their investments and achieve successful outcomes.</p>
         </div>
       </div>
 
@@ -31,8 +31,8 @@ const Service = () => {
       <div className="services">
         <img src={image5} alt="" />
         <div className="service">
-          <h2>With a focus on specialized capabilities in Ultra-Deepwater and Harsh-Environment Solutions</h2>
-          <p>Our expertise encompasses a wide range of capabilities, including ultra-deepwater and harsh-environment floaters. No matter the demands of your project, Augere Offshore Services is prepared to respond with the right assets and technology. We are committed to delivering effective solutions anywhere in the world, ensuring that your operations run smoothly and efficiently. </p>
+          <h2>With a focus on specialized capabilities in offshore and deepwater Solutions</h2>
+          <p>Our expertise encompasses a wide range of capabilities, including offshore and deepwater floaters. No matter the demands of your project, Augere Offshore Services is prepared to respond with the right assets and technology. We are committed to delivering effective solutions anywhere in the world, ensuring that your operations run smoothly and efficiently. </p>
         </div>
       </div>
 

@@ -29,7 +29,6 @@ const Home = () => {
     fetch(blogurl)
     .then(response => response.json())
     .then(data => {
-      // setBlogs(data.posts.slice(0,3));
       setBlog1(data.posts[0]);
       setBlog2(data.posts[1]);
       setLoading(false)
@@ -87,9 +86,6 @@ const Home = () => {
                     <img src={blog1.featured_image} alt="" />
                     <div className="text">
                         <h3>{blog1.title}</h3>
-                        {/* <div className="info">
-                          {new Date(blog1.modified).toLocaleDateString('en-US', { year:'numeric', month: 'long', day: 'numeric' })}
-                        </div> */}
                     </div>
                 </Link>
                 <div className="blog-container">
@@ -112,9 +108,6 @@ const Home = () => {
                     <img src={blog2.featured_image} alt="" />
                     <div className="text">
                         <h3>{blog2.title}</h3>
-                        {/* <div className="info">
-                          {new Date(blog1.modified).toLocaleDateString('en-US', { year:'numeric', month: 'long', day: 'numeric' })}
-                        </div> */}
                     </div>
                 </Link>
               </div>
