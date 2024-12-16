@@ -13,7 +13,9 @@ const Insights = () => {
     'Nigeria’s Deepwater Oil Legacy: A Journey Through Time',
     'The Future of Deepwater Oil and Gas in Nigeria: Challenges and Opportunities',
     'The Evolution of Drillship Rig Generations',
-    'Behind the scenes of Deepwater Drilling Technology, Teamwork and Precicion'
+    'Behind the scenes of Deepwater Drilling Technology, Teamwork and Precicion',
+    'Navigating Compliance in Nigeria’s Deepwater Oil and Gas Sector',
+    'Pioneering Sustainability in Deepwater Drilling'
   ];
 
     const blogurl = 'https://public-api.wordpress.com/rest/v1/sites/ppo0ed0e0e7e4dd.wordpress.com/posts'
