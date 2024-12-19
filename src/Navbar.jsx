@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><Link to="/hse">HSE</Link></li>
         <li><Link to="/sustainability">Sustainability</Link></li>
         <li><Link to="/insights">Insights</Link></li>
-        <a href="https://jobs.talenture.co.uk/jobs/AUGERE-OFFSHORE" target='blank'>Carrers</a>
+        <li><a href="https://jobs.talenture.co.uk/jobs/AUGERE-OFFSHORE" target='blank'>Carrers</a></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
   </nav>
