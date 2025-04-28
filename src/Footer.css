@@ -1,4 +1,4 @@
-footer{
+footer {
     background: var(--blue);
     padding: 30px 50px;
     color: white;
@@ -6,6 +6,7 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+
 /* footer .top{
     display: flex;
     justify-content: space-between;
@@ -22,21 +23,24 @@ footer{
     gap: 100px;
     margin-top: 10px;
 } */
-footer img{
+footer img {
     width: 120px;
 }
+
 /* footer .privacy{
     text-align: center;
     margin-top: 30px;
 } */
-footer a{
+footer a {
     color: white;
     transition: .4s;
 }
-footer a:hover{
+
+footer a:hover {
     opacity: 0.8;
 }
-footer .social{
+
+footer .social {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -45,12 +49,13 @@ footer .social{
 
 
 @media (max-width: 1000px) {
-    footer{
+    footer {
         padding: 20px;
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
     }
+
     /* footer .top{
         padding: 30px 0;
         display: block;
