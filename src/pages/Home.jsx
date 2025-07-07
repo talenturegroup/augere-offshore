@@ -14,15 +14,38 @@ const Home = () => {
   const [blog2, setBlog2] = useState({});
   const [loading, setLoading] = useState(true);
 
-  const newsurl = `https://content.guardianapis.com/search?q=oil%20and%20gas&api-key=a0b17842-e04f-4a9d-8e7a-5a4ba5b616df`;
+  // const newsurl = `https://content.guardianapis.com/search?q=oil%20and%20gas&api-key=a0b17842-e04f-4a9d-8e7a-5a4ba5b616df`;
+  const newsurl = `https://corsproxy.io/?https://content.guardianapis.com/search?q=oil%20and%20gas&api-key=f8f047fd-b751-4d6e-80de-76f4e9c7feb1`;
+  // const newsurl = `https://newsapi.org/v2/everything?` + 
+  //   `q=(oil OR "crude oil" OR "natural gas" OR petroleum OR OPEC OR "energy market") AND (industry OR price OR production)` +
+  //   `&language=en` +
+  //   `&domains=reuters.com,bloomberg.com,cnbc.com,oilprice.com,rigzone.com` +
+  //   `&sortBy=publishedAt` +
+  //   `&pageSize=10` +
+  //   `&apiKey=e9d4d076333944818349aa0582436453`;
   const blogurl = 'https://public-api.wordpress.com/rest/v1/sites/ppo0ed0e0e7e4dd.wordpress.com/posts';
 
   useEffect(()=>{
     fetch(newsurl)
     .then(response => response.json())
-    .then(data => setNews(data.response.results))
-    .catch(err => console.log(err))
-  }, []);
+    .then(data => {
+      if (data && data.response && Array.isArray(data.response.results)) {
+        setNews(data.response.results);
+      } else {
+        setNews([]); // fallback to empty array if structure is unexpected
+      }
+    })
+    .catch(err => {console.log(err)
+      setNews([]); // fallback to empty array on error
+    })
+  }, [newsurl]);
+
+  // useEffect(() => {
+  //   fetch(newsurl)
+  //     .then(response => response.json())
+  //     .then(data => setNews(data.articles))
+  //     .catch(err => console.log(err))
+  // }, [newsurl]);
 
   
   useEffect(()=>{
@@ -73,6 +96,12 @@ const Home = () => {
                 <b>{article.webTitle}</b>
               </a>
             ))}
+            {/* {news.map((article, index) => (
+  <a href={article.url} target='_blank' rel="noreferrer" key={index}>
+    <p>{new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+    <b>{article.title}</b>
+  </a>
+))} */}
           </div>
         </div>
       </section>
